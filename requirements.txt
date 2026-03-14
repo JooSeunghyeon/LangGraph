@@ -1,0 +1,11 @@
+# LangGraph and agent orchestration
+langgraph>=0.2.0,<2
+
+# OpenAI integration for Chat models
+langchain-openai>=0.2.0
+
+# Environment variables (API keys)
+python-dotenv>=1.0.0
+
+# TypedDict, Annotated (Python < 3.9 compatibility)
+typing-extensions>=4.0.0
