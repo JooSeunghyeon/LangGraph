@@ -2,6 +2,8 @@
 
 동일 실험을 재현하기 위한 환경, 명령, 데이터를 정리한 문서이다.
 
+**저장소 (실험 구현·지표 기록)**: [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph)
+
 ---
 
 ## 1. 환경

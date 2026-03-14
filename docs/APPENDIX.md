@@ -1,5 +1,9 @@
 # 부록: 실험 설정 및 지표 정의
 
+**실험 구현·지표 기록** 코드: [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph) (`experiments/`)
+
+---
+
 ## A.1 실험 설정 요약
 
 | 항목 | 설명 | 기본값 / 예시 |

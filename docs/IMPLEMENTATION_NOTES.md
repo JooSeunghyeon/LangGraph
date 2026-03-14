@@ -1,5 +1,9 @@
 # LangGraph 실험 구현 경험 정리
 
+**실험 구현·지표 기록** 소스 위치: [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph) (`experiments/`)
+
+---
+
 ## 1. 설계 선택: 상태 vs 콜백
 
 ### 상태에 지표 넣기 (Part 6/7)

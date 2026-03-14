@@ -2,6 +2,8 @@
 
 기술 보고서 초안. 실험 방법·지표 정의·재현성은 [APPENDIX.md](APPENDIX.md), [REPRODUCIBILITY.md](REPRODUCIBILITY.md)와 일치하도록 유지한다.
 
+**LangGraph를 사용한 실험 구현·지표 기록** 코드 및 설정: [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph) (`experiments/`, `docs/`)
+
 ---
 
 ## 제목
@@ -72,6 +74,7 @@ LangGraph Quick Start Part 1~7에 대응하는 실험 러너와 지표 수집을
 
 - LangGraph Overview. https://docs.langchain.com/oss/python/langgraph/overview
 - LangChain Python Documentation. https://python.langchain.com/
+- 본 프로젝트 (실험 구현·지표 기록 소스): [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph)
 - 본 프로젝트 README: [../README.md](../README.md)
 
 ---

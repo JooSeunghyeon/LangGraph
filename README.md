@@ -107,6 +107,8 @@ LangGraph/
 
 ## 실험 실행 및 문서
 
+- **LangGraph를 사용한 실험 구현·지표 기록**은 이 저장소의 `experiments/`에서 이루어진다.  
+  **저장소**: [https://github.com/JooSeunghyeon/LangGraph](https://github.com/JooSeunghyeon/LangGraph)
 - **실험 러너**: Part 1~7을 동일 인터페이스로 실행하고 지표(latency, llm_calls, tool_calls 등)를 JSONL로 기록한다.
   - `python experiments/run_experiments.py --graph part1 --model gpt-3.5-turbo --seed 42`
   - `python experiments/run_experiments.py --config experiments/configs/baseline.yaml`
