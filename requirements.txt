@@ -1,6 +1,9 @@
 # LangGraph and agent orchestration
 langgraph>=0.2.0,<2
 
+# LangChain core (callbacks, messages)
+langchain-core>=0.2.0
+
 # OpenAI integration for Chat models
 langchain-openai>=0.2.0
 
@@ -9,3 +12,6 @@ python-dotenv>=1.0.0
 
 # TypedDict, Annotated (Python < 3.9 compatibility)
 typing-extensions>=4.0.0
+
+# Experiment config (YAML)
+pyyaml>=6.0

@@ -1,0 +1,9 @@
+# Change/extension experiment: multiple graphs and/or models.
+# Run: python experiments/run_experiments.py --config experiments/configs/variants.yaml
+
+graphs:
+  - part1
+  - part2
+model: gpt-3.5-turbo
+repeat: 1
+seed: 42

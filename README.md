@@ -38,6 +38,17 @@ LangGraph/
 ├── quickstart_part4_human_in_the_loop.py            # Human-in-the-loop
 ├── quickstart_part5_manual_state_update.py          # 상태 수동 업데이트
 ├── quickstart_part6_part7_custom_state_and_time_travel.py  # 상태 커스터마이징 + 시간 여행
+├── experiments/                 # 실험 러너 및 지표 기록
+│   ├── run_experiments.py       # 실험 실행 진입점
+│   ├── metrics.py               # 지표 수집 (콜백, RunMetrics)
+│   ├── graphs/                  # Part 1~7 그래프 빌더 (모델 인자 지원)
+│   ├── configs/                 # YAML 설정 (baseline, variants)
+│   └── results/                 # JSONL 결과 (gitignore)
+├── docs/                        # 문서
+│   ├── IMPLEMENTATION_NOTES.md  # 구현 경험 정리
+│   ├── APPENDIX.md              # 실험 설정·지표 정의·결과 요약
+│   ├── REPRODUCIBILITY.md       # 재현성 (환경·시드·명령)
+│   └── REPORT.md                # 논문형 기술 보고서
 └── chatbot*.png                 # 그래프 시각화
 ```
 
@@ -91,6 +102,16 @@ LangGraph/
 - **Part 5**: **상태만 넣고/조회** (노드 안 돌리고).
 - **Part 6**: 상태 **필드마다 갱신 방식** 다르게 (리듀서).
 - **Part 7**: **과거 시점 상태** 보기 (시간 여행).
+
+---
+
+## 실험 실행 및 문서
+
+- **실험 러너**: Part 1~7을 동일 인터페이스로 실행하고 지표(latency, llm_calls, tool_calls 등)를 JSONL로 기록한다.
+  - `python experiments/run_experiments.py --graph part1 --model gpt-3.5-turbo --seed 42`
+  - `python experiments/run_experiments.py --config experiments/configs/baseline.yaml`
+  - 변경/확장 실험(여러 그래프·모델): `--config experiments/configs/variants.yaml`
+- **문서**: [docs/IMPLEMENTATION_NOTES.md](docs/IMPLEMENTATION_NOTES.md) (구현 경험), [docs/APPENDIX.md](docs/APPENDIX.md) (설정·지표 정의), [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) (재현성), [docs/REPORT.md](docs/REPORT.md) (기술 보고서).
 
 ---
 

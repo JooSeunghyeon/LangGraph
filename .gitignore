@@ -22,3 +22,7 @@ env/
 # Output
 *.png
 *.log
+
+# Experiment results
+experiments/results/*.json
+experiments/results/*.jsonl
